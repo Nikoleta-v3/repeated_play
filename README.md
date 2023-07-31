@@ -16,7 +16,7 @@ For simulating the play in repeated games, consider using the Python package
 payoff when players use either memory-one, memory-two, or memory-three
 strategies.
 
-### Quick Usage
+## Quick Usage
 
 Assume a repeated game of the Prisoner's Dilemma where players can choose to
 cooperate (C) or defect (D) in each round. A memory-one strategy is a strategy
@@ -71,13 +71,60 @@ results to a long term outcome of both strategies defecting.
 Notice that the function returns a `list`. That is because Markov processes can
 have more then a single absorbing state.
 
+## Multiple Absorbing States
+
+It can happen that the match between two strategies can have more than one
+possible solution. Consider the case of an Alternator a strategy that alternates
+between it's actions ($\text{Alternator} = (0, 0, 1, 1)$) and a strategy that
+always cooperates if it did in the previous turn and always defects if it
+defected in the previous turn $OppositeAlternator = (1, 1, 0, 0)$. A match
+between these two strategies results in two solutions:
+
+```python
+>>> Alternator = np.array([0, 0, 1, 1])
+>>> OppositeAlternator = np.array([1, 1, 0, 0])
+>>> M = repeated_play.retr_transition_matrix_repeated_game(OppositeAlternator,
+...                                                        Alternator,
+...                                                        memory="one")
+
+>>> ss = repeated_play.calc_stationary_distribution(M)
+>>> ss
+[array([0.5, 0.5, 0. , 0. ]), array([0. , 0. , 0.5, 0.5])]
+```
+
 ## Memory Two
 
+```python
+>>> DelayedAlternator = np.array([0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1])
+>>> AllD = np.array([0 for _ in range(16)])
+
+>>> M = repeated_play.retr_transition_matrix_repeated_game(DelayedAlternator,
+...                                                        AllD,
+...                                                        memory="two")
+
+>>> ss = repeated_play.calc_stationary_distribution(M)
+>>> ss
+```
+
 ## Memory Three
+
+```python
+>>> Random = np.random.random(64)
+>>> AllD = np.array([0 for _ in range(64)])
+
+>>> M = repeated_play.retr_transition_matrix_repeated_game(Random,
+...                                                        AllD,
+...                                                        memory='three')
+
+>>> M.shape
+(64, 64)
+```
 
 ## Long Term Payoffs
 
 ## Discounted Game
+
+_coming soon_
 
 ## Tests
 

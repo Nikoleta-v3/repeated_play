@@ -24,3 +24,25 @@ def test_retr_transition_matrix_memory_one():
 
     assert isinstance(M, np.ndarray)
     assert M.shape == (4, 4)
+
+
+def test_retr_transition_matrix_memory_two():
+    memory = "two"
+    DelayedAlternator = np.array([0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1])
+    AllD = np.array([0 for _ in range(16)])
+
+    M = repeated_play.retr_transition_matrix_repeated_game(DelayedAlternator, AllD, memory)
+
+    assert isinstance(M, np.ndarray)
+    assert M.shape == (16, 16)
+
+
+def test_retr_transition_matrix_memory_three():
+    memory = "three"
+    Random = np.random.random(64)
+    AllD = np.array([0 for _ in range(64)])
+
+    M = repeated_play.retr_transition_matrix_repeated_game(Random, AllD, memory)
+
+    assert isinstance(M, np.ndarray)
+    assert M.shape == (64, 64)

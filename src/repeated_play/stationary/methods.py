@@ -9,6 +9,8 @@ def stationary_distribution_eigenvalues(M):
     """A function that takes a numerical transition matrix as input and
     returns the stationary state.
 
+    This function uses the eigenvalues of the transition matrix method.
+
     Parameters
     ----------
     M : np.array
