@@ -1,4 +1,4 @@
-from stationary.methods import stationary_distribution_eigenvalues
+from repeated_play.stationary import stationary_distribution_eigenvalues
 
 import numpy as np
 

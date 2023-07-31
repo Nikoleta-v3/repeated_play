@@ -1,5 +1,5 @@
-import stationary as stpy
+import repeated_play
 
 
 def test_version():
-    assert stpy.__version__ == "0.0.1"
+    assert repeated_play.__version__ == "0.0.1"

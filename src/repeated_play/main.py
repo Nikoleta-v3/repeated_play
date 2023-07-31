@@ -2,7 +2,7 @@ import numpy as np
 
 import sympy as sym
 
-from .methods import (
+from .stationary import (
     stationary_distribution_eigenvalues,
     stationary_distribution_algebraic_system,
 )
