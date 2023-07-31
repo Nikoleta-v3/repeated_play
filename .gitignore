@@ -1,0 +1,3 @@
+src/stationary.egg-info/*
+src/stationary/__pycache__/*
+tests/__pycache__/*
