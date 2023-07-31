@@ -24,7 +24,6 @@ def stationary_distribution_eigenvalues(M):
     eigenvalues, eigenvectors = np.linalg.eig(M.T)
 
     for index in np.where(np.isclose(eigenvalues, 1))[0]:
-
         eigenvectors_one = eigenvectors[:, index]
         stationary = eigenvectors_one / eigenvectors_one.sum()
         vectors.append(stationary.real)

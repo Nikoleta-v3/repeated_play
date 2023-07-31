@@ -42,7 +42,9 @@ def transition_matrix_memory_one_strategies(
     return M
 
 
-def transition_matrix_memory_one_two(player, co_player, analytical=False):
+def transition_matrix_memory_two_strategies(
+    player, co_player, analytical=False
+):
     (
         p1,
         p2,
@@ -91,7 +93,6 @@ def transition_matrix_memory_one_two(player, co_player, analytical=False):
         for i, combo in enumerate(
             [(p * q), ((1 - q) * p), ((1 - p) * q), ((1 - p) * (1 - q))]
         ):
-
             M[row, col + i] = combo
 
         col += 4
@@ -102,7 +103,6 @@ def transition_matrix_memory_one_two(player, co_player, analytical=False):
         for i, combo in enumerate(
             [(p * q), ((1 - q) * p), ((1 - p) * q), ((1 - p) * (1 - q))]
         ):
-
             M[row, col + i] = combo
 
         col += 4
@@ -113,7 +113,6 @@ def transition_matrix_memory_one_two(player, co_player, analytical=False):
         for i, combo in enumerate(
             [(p * q), ((1 - q) * p), ((1 - p) * q), ((1 - p) * (1 - q))]
         ):
-
             M[row, col + i] = combo
 
         col += 4
@@ -124,7 +123,6 @@ def transition_matrix_memory_one_two(player, co_player, analytical=False):
         for i, combo in enumerate(
             [(p * q), ((1 - q) * p), ((1 - p) * q), ((1 - p) * (1 - q))]
         ):
-
             M[row, col + i] = combo
 
         col += 4
@@ -133,7 +131,7 @@ def transition_matrix_memory_one_two(player, co_player, analytical=False):
     return M
 
 
-def transition_matrix_memory_one_strategies(
+def transition_matrix_memory_three_strategies(
     player, co_player, analytical=False
 ):
     row_iterations = [range(16), range(16, 32), range(32, 48), range(48, 64)]
