@@ -99,9 +99,13 @@ between these two strategies results in two solutions:
 ## Memory Two
 
 **Note**. In the case of memory-two strategies we assume that a strategy is
-written as $p = (p_{CC|CC}, p_{CC|CD}, p_{CC|DC}, p_{CC|DD}, p_{CD|CC},
+written as 
+
+$$p = (p_{CC|CC}, p_{CC|CD}, p_{CC|DC}, p_{CC|DD}, p_{CD|CC},
 p_{CD|CD},p_{CD|DC},p_{CD|DD}, p_{DC|CC}, p_{DC|CD}, p_{DC|DC}, p_{DC|DD},
-p_{DD|CC}, p_{DD|CD}, p_{DD|DC}, p_{DD|CC})$ where $CC|DC$ denotes that in the
+p_{DD|CC}, p_{DD|CD}, p_{DD|DC}, p_{DD|DD})$$
+
+where $CC|DC$ denotes that in the
 second to last round both players cooperated and in the last round player one
 defected. Thus $F_1 F_2 | E_1 E_2$ where $F_i$ is the action of player $i$ in
 the second to last round and $E_{i}$ is the action of player $i$ in the last
