@@ -1,7 +1,7 @@
 # repeated play
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![ci](https://github.com/Nikoleta-v3/repeated-play/actions/workflows/ci.yml/badge.svg)](https://github.com/Nikoleta-v3/repeated-play/actions/workflows/ci.yml)
 
 In the study of repeated games, we often assume that players use strategies from
 the family of memory-$n$ strategies. These strategies consider only the
