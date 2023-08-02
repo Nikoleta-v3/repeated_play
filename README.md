@@ -160,7 +160,7 @@ $$\begin{aligned}p = (& p_{CC|CC|CC}, p_{CC|CC|CD}, p_{CC|CC|DC}, p_{CC|CC|DD}, 
                       & p_{DD|DD|CC}, p_{DD|DD|CD}, p_{DD|DD|DC}, p_{DD|DD|DD}) \end{aligned}$$
 
 where $p_{G_1 G_2 | F_1 F_2 | E_1 E_2}, G_{i}, F_{i}, E_{i} \in \{C, D\}$ is the
-probability of cooperating following the outcome $G_1 G_2| F_1 F_2 | E_1 E_2.
+probability of cooperating following the outcome $G_1 G_2| F_1 F_2 | E_1 E_2$.
 $G_i$ is the action of player $i$ in the third-to-last round, $F_i$ is the
 action of player $i$ in the second-to-last round and $E_{i}$ is the action of
 player $i$ in the last round.
