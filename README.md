@@ -1,5 +1,8 @@
 # repeated play
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 In the study of repeated games, we often assume that players use strategies from
 the family of memory-$n$ strategies. These strategies consider only the
 $n$ previous outcomes to make a decision in the next round.
