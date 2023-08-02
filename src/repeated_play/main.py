@@ -14,7 +14,7 @@ from .transition_matrices import (
 )
 
 
-def calc_stationary_distribution(M, analytical=False):
+def stationary_distribution(M, analytical=False):
     if analytical == False:
         assert isinstance(M, np.ndarray), "M needs to be an numpy array."
         return stationary_distribution_eigenvalues(M)
@@ -24,7 +24,7 @@ def calc_stationary_distribution(M, analytical=False):
         return stationary_distribution_algebraic_system(M)
 
 
-def retr_transition_matrix_repeated_game(
+def transition_matrix_repeated_game(
     player, co_player, memory, analytical=False
 ):
     if memory == "one":
