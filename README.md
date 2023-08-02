@@ -110,8 +110,9 @@ $$\begin{aligned}p = (& p_{CC|CC}, p_{CC|CD}, p_{CC|DC}, p_{CC|DD}, \\
                       & p_{DD|CC}, p_{DD|CD}, p_{DD|DC}, p_{DD|DD}) \end{aligned}$$
 
 where $CC|DC$ denotes that in the second-to-last round, both players cooperated,
-and in the last round player one, defected. More generally, $p_{F_1 F_2 | E_1
-E_2}, F_{i}, E_{i} \in \{C, D\}$ if the probability after $F_1 F_2 | E_1 E_2$
+and in the last round player one, defected. More generally,
+$p_{F_1 F_2 | E_1 E_2}, F_{i}, E_{i} \in \{C, D\}$ if the probability after
+$F_1 F_2 | E_1 E_2$
 where $F_i$ is the action of player $i$ in the second-to-last round and $E_{i}$
 is the action of player $i$ in the last round.
 
@@ -190,8 +191,7 @@ game.
 For example consider our running example of the Prisoner's Dilemma. The payoff
 $S_{i}$ for players 1 and 2 are the following:
 
-$$\mathbf{S}_{1} = (R, S, T, P) \quad \textrm{and} \quad \mathbf{S}_{2} = (R,
-T, S, P).$$
+$$ \mathbf{S}_{1} = (R, S, T, P) \quad \textrm{and} \quad \mathbf{S}_{2} = (R, T, S, P).$$
 
 Assume that $R=3, S=0, T=5 and P=1$, the following code calculates the
 long-term payoff of Tit For Tat against Alternator.
