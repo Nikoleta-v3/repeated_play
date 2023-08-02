@@ -191,7 +191,7 @@ game.
 For example consider our running example of the Prisoner's Dilemma. The payoff
 $S_{i}$ for players 1 and 2 are the following:
 
-$$ \mathbf{S}_{1} = (R, S, T, P) \quad \textrm{and} \quad \mathbf{S}_{2} = (R, T, S, P).$$
+$$ S_{1} = (R, S, T, P) \quad \text{ and } \quad S_{2} = (R, T, S, P).$$
 
 Assume that $R=3, S=0, T=5 and P=1$, the following code calculates the
 long-term payoff of Tit For Tat against Alternator.
