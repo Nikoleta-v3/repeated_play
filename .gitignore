@@ -1,3 +1,2 @@
-src/stationary.egg-info/*
-src/stationary/__pycache__/*
 **/__pycache__/**
+src/repeated_play.egg-info/**
