@@ -48,16 +48,16 @@ def stationary_distribution_algebraic_system(M):
         The stationary vector
     """
     size = M.shape[1]
-    pi = sym.symbols(f"p_1:{size + 1}")
+    iss = sym.symbols(f"i_1:{size + 1}")
     ss = sym.solve(
-        [sum(pi) - 1]
-        + [a - b for a, b in zip(M.transpose() * sym.Matrix(pi), pi)],
-        pi,
+        [sum(iss) - 1]
+        + [a - b for a, b in zip(M.transpose() * sym.Matrix(iss),iss)],
+        iss,
     )
 
     v_vector = sym.Matrix(
         [
-            [ss[p] for p in pi],
+            [ss[p] for p in iss],
         ]
     )
 
