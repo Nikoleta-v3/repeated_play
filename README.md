@@ -19,6 +19,9 @@ For simulating the play in repeated games, consider using the Python package
 outcome and payoffs between a pair of players using either memory-one,
 memory-two, or memory-three strategies.
 
+## Install
+
+For installation notes see: [installation.md](installation.md).
 
 ## Quick Usage
 
