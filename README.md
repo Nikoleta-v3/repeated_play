@@ -299,7 +299,7 @@ However, if you want transition matrices for you paper you can use the
 
 ## Discounted Game
 
-_coming soon_
+Now we are developing it.
 
 ## Tests
 
