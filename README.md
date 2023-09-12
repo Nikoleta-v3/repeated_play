@@ -97,7 +97,7 @@ between these two strategies results in two solutions:
 ...                                                   Alternator,
 ...                                                   memory="one")
 
->>> ss = repeated_play.calc_stationary_distribution(M)
+>>> ss = repeated_play.stationary_distribution(M)
 >>> ss
 [array([0.5, 0.5, 0. , 0. ]), array([0. , 0. , 0.5, 0.5])]
 ```
