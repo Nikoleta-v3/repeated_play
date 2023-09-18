@@ -79,7 +79,7 @@ def stationary_distribution_discount_factor_numerical(M, opening_state, delta):
     np.array
         Stationary vector
     """
-    eye_matrix = np.eye(4)
+    eye_matrix = np.eye(M.shape[0])
     inverse_matrix = inv(eye_matrix - delta * M)
 
     return ((1 - delta) * opening_state.T) @ inverse_matrix
@@ -102,7 +102,7 @@ def stationary_distribution_discount_factor_analytical(M, opening_state, delta):
     sym.Matrix
         Stationary vector
     """
-    eye_matrix = sym.eye(4)
+    eye_matrix = sym.eye(M.shape[0])
     inverse_matrix = (eye_matrix - delta * M).inv()
 
     return ((1 - delta) * opening_state.T) @ inverse_matrix
