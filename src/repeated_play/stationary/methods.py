@@ -1,7 +1,5 @@
-import sympy as sym
-
 import numpy as np
-
+import sympy as sym
 from numpy.linalg import inv
 
 
@@ -51,7 +49,7 @@ def stationary_distribution_algebraic_system(M):
     iss = sym.symbols(f"i_1:{size + 1}")
     ss = sym.solve(
         [sum(iss) - 1]
-        + [a - b for a, b in zip(M.transpose() * sym.Matrix(iss),iss)],
+        + [a - b for a, b in zip(M.transpose() * sym.Matrix(iss), iss)],
         iss,
     )
 

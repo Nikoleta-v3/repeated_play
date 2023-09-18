@@ -1,16 +1,14 @@
 import numpy as np
-
 import sympy as sym
 
 from .stationary import (
-    stationary_distribution_eigenvalues,
     stationary_distribution_algebraic_system,
+    stationary_distribution_eigenvalues,
 )
-
 from .transition_matrices import (
     transition_matrix_memory_one_strategies,
-    transition_matrix_memory_two_strategies,
     transition_matrix_memory_three_strategies,
+    transition_matrix_memory_two_strategies,
 )
 
 

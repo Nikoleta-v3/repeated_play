@@ -1,6 +1,6 @@
-from repeated_play.stationary import stationary_distribution_eigenvalues
-
 import numpy as np
+
+from repeated_play.stationary import stationary_distribution_eigenvalues
 
 
 def test_stationary_distribution_eigenvalues():

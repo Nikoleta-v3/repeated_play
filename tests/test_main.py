@@ -1,8 +1,7 @@
-import repeated_play
-
 import numpy as np
-
 import sympy as sym
+
+import repeated_play
 
 
 def test_stationary_distribution_numerical():
@@ -28,10 +27,14 @@ def test_transition_matrix_memory_one():
 
 def test_transition_matrix_memory_two():
     memory = "two"
-    DelayedAlternator = np.array([0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1])
+    DelayedAlternator = np.array(
+        [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]
+    )
     AllD = np.array([0 for _ in range(16)])
 
-    M = repeated_play.transition_matrix_repeated_game(DelayedAlternator, AllD, memory)
+    M = repeated_play.transition_matrix_repeated_game(
+        DelayedAlternator, AllD, memory
+    )
 
     assert isinstance(M, np.ndarray)
     assert M.shape == (16, 16)
