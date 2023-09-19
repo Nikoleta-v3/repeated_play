@@ -3,9 +3,9 @@ import sympy as sym
 
 from repeated_play.stationary import (
     stationary_distribution_algebraic_system,
+    stationary_distribution_discount_factor_analytical,
     stationary_distribution_discount_factor_numerical,
     stationary_distribution_eigenvalues,
-    stationary_distribution_discount_factor_analytical,
 )
 from repeated_play.transition_matrices import (
     transition_matrix_memory_one_strategies,
