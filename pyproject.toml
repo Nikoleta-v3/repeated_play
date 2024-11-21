@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repeated_play"
+authors = [
+    { name="Nikoleta Glynatsi", email="glynatsi@evolbio.mpg.de" },
+    { name="Zhenyu Shi" },
+]
+description = "A package for calculating long-term outcomes in two-player repeated games."
+readme = "README.md"
+requires-python = ">=3.5"
+license = {text = "MIT License"}
+keywords = [
+    "game-theory",
+    "repeated-games",
+    "markov-process",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "numpy",
+    'sympy',
+]
+
+version = "0.0.1"
+
+[project.urls]
+homepage = "https://github.com/Nikoleta-v3/repeated-play"
+documentation = "https://github.com/Nikoleta-v3/repeated-play/blob/main/README.md"
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80
