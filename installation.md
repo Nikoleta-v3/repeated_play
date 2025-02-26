@@ -12,15 +12,5 @@ Then, after navigating to the project install the package:
 
 ```shell
 cd repeated-play
-python setup.py install
-```
-
-
-# Development Mode
-
-To install the package in development mode run the following command,
-after cloning the package:
-
-```shell
-$ python setup.py develop
+pip install -e .
 ```
